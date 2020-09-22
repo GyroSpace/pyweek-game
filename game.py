@@ -1,5 +1,7 @@
+import pygame
+from classes import *
+from test import *
 def game():
-	import pygame
 	pygame.init()
 
 	screen = pygame.display.set_mode((500, 500))
@@ -16,6 +18,13 @@ def game():
 	jumpCount = 10
 
 	run = True
+	Char = Character()
+	Group = pygame.sprite.Group(Char)
+	clock = pygame.time.Clock()
+
+	# Character 2
+	Char2 = Character2()
+	Group2 = pygame.sprite.Group(Char2)
 	while run:
 		pygame.time.delay(100)
 
@@ -48,8 +57,11 @@ def game():
 			else:
 				isJump = False
 				JumpCount = 10
+		Group.update()
+		Group2.update()
 		screen.fill((0,0,0))
-		pygame.draw.rect(screen, (255, 0 , 0), (x, y , width, height))
+		Group.draw(screen)
+		Group2.draw(screen)
 		pygame.display.update()
-
+		clock.tick(10)
 	pygame.quit()
