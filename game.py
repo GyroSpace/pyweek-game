@@ -1,6 +1,6 @@
 import pygame
 from classes import *
-from test import *
+from Character2 import *
 def game():
 	pygame.init()
 
