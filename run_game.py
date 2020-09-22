@@ -1,2 +1,2 @@
-from classes import game
+from game import *
 game()
