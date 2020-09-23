@@ -21,19 +21,3 @@ class Character(pygame.sprite.Sprite):
 		if self.index >= len(self.images):
 			self.index = 0
 		self.image = self.images[self.index]
-class Map(pygame.sprite.Sprite):
-	def __init__(self):
-		super(Map, self).__init__()
-
-		self.images = []
-
-		self.images.append(pygame.image.load("Map/Jo3xzTtU.png"))
-		self.index = 0
-		self.image = self.images[self.index]
-		self.rect = pygame.Rect(0,0,0,0)
-
-	def update(self):
-		self.index += 1
-		if self.index >= len(self.images):
-			self.index = 0
-		self.image = self.images[self.index]
