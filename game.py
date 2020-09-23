@@ -1,6 +1,4 @@
 import pygame
-from classes import *
-from test import *
 def game():
 	pygame.init()
 
