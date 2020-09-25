@@ -12,7 +12,7 @@
 
 
 # How to run:
-## Windows and MacOS:
+## Windows:
 - For Windows run ```python run_game.py```
-## Linux:
+## Linux and MacOS:
 - For Linux and MacOS run ```python3 run_game.py```
