@@ -1,2 +1,2 @@
-from game import *
+from game_functions import *
 game()
